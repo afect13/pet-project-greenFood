@@ -3,13 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      yelow: "#FFF0DC",
-      organge: "#FB9333",
+      yellow: "#FFF0DC",
+      oragange: "#FB9333",
+      orange500: "rgb(234 179 8)",
       greytext: "#575757",
       greytext2: "#828282",
     },
     fontFamily: {
       russo: ["Russo One", "sans-serif"],
+      nunito: ["nunito"],
     },
     extend: {},
   },
