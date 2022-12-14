@@ -1,0 +1,44 @@
+.wrapper {
+  @apply flex flex-row;
+
+  .col-left {
+    @apply flex flex-col basis-1/2;
+    .badge {
+      @apply w-[210px] h-[50px] bg-yellow  rounded-3xl text-center mt-[40px];
+      p {
+        @apply m-3 font-russo text-[16px] text-oragange;
+      }
+    }
+    h1 {
+      @apply font-russo text-[72px] tracking-tight font-bold leading-[130%] mt-[40px];
+      span {
+        @apply text-oragange;
+      }
+    }
+    p {
+      @apply font-nunito text-[20px] leading-[160%] font-medium mt-[40px];
+    }
+    button {
+      @apply bg-oragange w-[192px] h-[68px] rounded-[100px] font-russo  text-yellow mt-[40px] 
+       hover:bg-orange500 transition duration-300 ease-in-out;
+    }
+  }
+  .col-rigth {
+    @apply basis-1/2 relative;
+    .inner {
+      @apply block;
+      .food {
+        @apply w-max h-max mt-[40px];
+      }
+      .rucola {
+        @apply absolute top-0  right-[230px];
+      }
+    }
+    .arrow {
+      @apply absolute bottom-0 right-0 w-fit;
+    }
+    .blur {
+      @apply w-[250px] h-[500px] bg-oragange rounded-full rotate-45 blur-[200px] absolute top-0  right-0 z-[-1];
+    }
+  }
+}
